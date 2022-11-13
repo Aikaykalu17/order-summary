@@ -1,0 +1,471 @@
+@keyframes btn {
+    from {
+        background-color: hsl(223, 47%, 23%);
+    }
+
+    to {
+        background-color: hsl(245, 75%, 52%);
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main-container {
+    max-width: 1440px;
+    min-height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    margin: 0 auto;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.main-container .background {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.main-container .main {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    background-color: white;
+    height: 100%;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.main-container .main div .main-img {
+    height: 50%;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.main-container .main .details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    height: 100%;
+}
+
+.main-container .main .details .heading {
+    font-weight: 900;
+    margin-top: 10px;
+    font-size: 23px;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.main-container .main .details .text {
+    font-size: 15px;
+    width: 59%;
+}
+
+.main-container .main .details .select {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(225, 100%, 98%);
+    align-items: center;
+    width: 70%;
+    height: 70px;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.main-container .main .details .select .audio-link {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+
+.main-container .main .details .select .audio-text .audio-head {
+    font-size: 18px;
+    font-weight: 900;
+}
+.main-container .main .details .select .audio-text .audio-sec {
+    font-size: 14px;
+}
+
+.main-container .main .details .select .audio-link:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+}
+
+.main-container .main .details .details-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 30px;
+}
+
+.main-container .main .details .details-info .btn {
+    height: 45px;
+    width: 310px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: hsl(245, 75%, 52%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    box-shadow: 2px 6px 10px 1px rgba(0, 0, 0, 0.3);
+    animation-name: btn;
+    animation-delay: 1s;
+    animation-duration: 10s;
+
+}
+
+.main-container .main .details .details-info .btn:hover {
+    background-color: hsl(224, 23%, 55%);
+    animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: width 2s ease-in;
+    width: 150px;
+}
+
+.main-container .main .details .details-info div .cancel-link {
+    text-decoration: none;
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+.main-container .main .details .details-info div .cancel-link:hover {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 14px;
+}
+
+@media all and (max-width:550px) {
+    @keyframes btn {
+        from {
+            background-color: hsl(223, 47%, 23%);
+        }
+
+        to {
+            background-color: hsl(245, 75%, 52%);
+        }
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .main-container {
+        max-width: 375px;
+        min-height: 100vh;
+        background-color: hsl(225, 100%, 94%);
+        margin: 0 auto;
+        font-family: 'Red Hat Display', sans-serif;
+        background-image: url('../images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .main-container .background {
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .main-container .main {
+        display: flex;
+        flex-direction: column;
+        max-width: 340px;
+        background-color: white;
+        height: 100%;
+        text-align: center;
+        border-radius: 15px;
+
+    }
+
+    .main-container .main div .main-img {
+        height: 50%;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .main-container .main .details {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        height: 100%;
+    }
+
+    .main-container .main .details .heading {
+        font-weight: 900;
+        margin-top: 10px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 23px;
+    }
+
+    .main-container .main .details .text {
+        font-size: 15px;
+        width: 70%;
+    }
+
+    .main-container .main .details .select {
+        display: flex;
+        flex-direction: row;
+        background-color: hsl(225, 100%, 98%);
+        align-items: center;
+        width: 80%;
+        height: 70px;
+        border-radius: 10px;
+        justify-content: space-around;
+    }
+
+    .main-container .main .details .select .audio-text .audio-sec {
+        font-size: 14px;
+    }
+
+
+    .main-container .main .details .select .audio-text .audio-head {
+        font-size: 18px;
+        font-weight: 900;
+    }
+
+    .main-container .main .details .select .audio-link {
+        color: hsl(223, 47%, 23%);
+        font-weight: 700;
+        font-size: 13px;
+    }
+
+    .main-container .main .details .select .audio-link:hover {
+        text-decoration: none;
+        color: hsl(245, 75%, 52%);
+    }
+
+    .main-container .main .details .details-info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .main-container .main .details .details-info .btn {
+        height: 45px;
+        width: 260px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: hsl(245, 75%, 52%);
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 700;
+        color: #fff;
+        box-shadow: 2px 6px 10px 1px rgba(0, 0, 0, 0.3);
+        animation-name: btn;
+        animation-delay: 1s;
+        animation-duration: 10s;
+
+    }
+
+    .main-container .main .details .details-info .btn:hover {
+        background-color: hsl(224, 23%, 55%);
+        animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+        transition: width 2s ease-in;
+        width: 150px;
+    }
+
+    .main-container .main .details .details-info div .cancel-link {
+        text-decoration: none;
+        color: hsl(223, 47%, 23%);
+        font-weight: 700;
+    }
+
+    .main-container .main .details .details-info div .cancel-link:hover {
+        color: hsl(223, 47%, 23%);
+        font-weight: 900;
+        font-size: 14px;
+    }
+}
+
+
+@media all and (max-width:1200px) and (min-width:550px) {
+    @keyframes btn {
+        from {
+            background-color: hsl(223, 47%, 23%);
+        }
+
+        to {
+            background-color: hsl(245, 75%, 52%);
+        }
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .main-container {
+        max-width: 1440px;
+        min-height: 100vh;
+        background-color: hsl(225, 100%, 94%);
+        margin: 0 auto;
+        font-family: 'Red Hat Display', sans-serif;
+        background-image: url('../images/pattern-background-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .main-container .background {
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .main-container .main {
+        display: flex;
+        flex-direction: column;
+        max-width: 340px;
+        background-color: white;
+        height: 100%;
+        text-align: center;
+        border-radius: 15px;
+
+    }
+
+    .main-container .main div .main-img {
+        height: 50%;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .main-container .main .details {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        height: 100%;
+    }
+
+    .main-container .main .details .heading {
+        font-weight: 900;
+        margin-top: 10px;
+        font-size: 23px;
+        font-family: 'Red Hat Display', sans-serif;
+
+    }
+
+    .main-container .main .details .text {
+        font-size: 15px;
+        width: 70%;
+    }
+
+    .main-container .main .details .select {
+        display: flex;
+        flex-direction: row;
+        background-color: hsl(225, 100%, 98%);
+        align-items: center;
+        width: 80%;
+        height: 70px;
+        border-radius: 10px;
+        justify-content: space-around;
+    }
+
+
+    .main-container .main .details .select .audio-text .audio-head {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+
+    .main-container .main .details .select .audio-text .audio-sec {
+        font-size: 14px;
+    }
+
+    .main-container .main .details .select .audio-link {
+        color: hsl(223, 47%, 23%);
+        font-weight: 700;
+        font-size: 13px;
+    }
+
+    .main-container .main .details .select .audio-link:hover {
+        text-decoration: none;
+        color: hsl(245, 75%, 52%);
+    }
+
+    .main-container .main .details .details-info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .main-container .main .details .details-info .btn {
+        height: 45px;
+        width: 260px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: hsl(245, 75%, 52%);
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 700;
+        color: #fff;
+        box-shadow: 2px 6px 10px 1px rgba(0, 0, 0, 0.3);
+        animation-name: btn;
+        animation-delay: 1s;
+        animation-duration: 10s;
+
+    }
+
+    .main-container .main .details .details-info .btn:hover {
+        background-color: hsl(224, 23%, 55%);
+        animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+        transition: width 2s ease-in;
+        width: 150px;
+    }
+
+    .main-container .main .details .details-info div .cancel-link {
+        text-decoration: none;
+        color: hsl(223, 47%, 23%);
+        font-weight: 700;
+    }
+
+    .main-container .main .details .details-info div .cancel-link:hover {
+        color: hsl(223, 47%, 23%);
+        font-weight: 900;
+        font-size: 14px;
+    }
+}
